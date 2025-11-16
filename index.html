@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConfirmationForm | AradhyeTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/ATDarkTheme.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="background">
+        <div class="night"></div>
+        <div class="gold"></div>
+        <div class="black"></div>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="/ATDarkTheme.png" alt="Aradhyetech Dark theme logo for confirmation form">
+        </div>
+        <div class="logotxt">
+            <h1>AradhyeTech</h1>
+            <h3>Change matters!</h3>
+        </div>
+    </header>
+    <!--
+    Why this form?
+    #To confirm order for clients
+    #to receive payments
+    #to receive paymetn confirmation
+    Form Architecture:
+    -->
+
+    <div class="container">
+        <h2>Thanks for trusting AradhyeTech let's complete a simple formality to start your journey!</h2>
+        <form action="">
+            <label for="personName">
+                Name
+                <input type="text" name="personName" required>
+            </label>
+            <label for="bizzName">
+                Business name
+                <input type="text" name="bizzName">
+            </label>
+            <label for="refNo">
+                Reference number of Quotation
+                <input type="text" name="refNo" required>
+            </label>
+            <label for="payment">
+                Method of payment
+            </label>
+            <select name="payment" required>
+                <option value="" disabled selected>Select</option>
+                <option value="rtgs">RTGS</option>
+                <option value="neft">NEFT</option>
+                <option value="imps">IMPS</option>
+                <option value="upi">UPI(GPay/Phonepay/etc.)</option>
+                <option value="cash" id="cash">Cash(Only available at center)</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="coupon">
+                Do you have any coupon?
+            </label>
+            <select name="coupon" required>
+                <option value="default">No I don't have</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="bronze">Bronze</option>
+            </select>
+            <input type="text" name="coupon_id" placeholder="Enter your coupon code here if you have coupon">
+            <label for="receipt" aria-required="true">
+                Please submit RTGS/IMPS/NEFT number or UPI transaction ID or cash receipt number(If paid cash) here for
+                verification
+                <input type="text" name="receipt" required>
+            </label>
+            <button type="submit">Submit form</button>
+        </form>
+    </div>
+    <footer>
+        <p>@2025 AradhyeTech all rights reserved.</p>
+    </footer>
+</body>
+
+</html>
